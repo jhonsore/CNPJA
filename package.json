@@ -1,6 +1,7 @@
 {
   "name": "cnaes",
   "version": "0.1.0",
+  "homepage": "https://jhonsore.com/stark/cnae",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
