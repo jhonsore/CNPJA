@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# API de consultas por CNPJ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Acesse [https://www.cnpja.com.br/](https://www.cnpja.com.br/)
 
-## Available Scripts
+2. Clique em Entrar no menu
 
-In the project directory, you can run:
+3. Efetue o login ou registre-se
 
-### `yarn start`
+4. Após registrar-se é preciso validar o email para que a chave token seja gerada no dashboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Após validar o email, ao entrar no painel, no canto esquerdo, terá uma área chamada "Chave de API".
+Nessa área, terá o token a ser utilizado nas requisições a api do cnpja
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+6. De posse do seu token, acesse o arquivo App.tsx na pasta src/ e mude na constante `API_KEY` o valor `MY-API_KEY` para o token
 
-### `yarn test`
+7. Para rodar o app, basta, abrir o terminal e digitar `$ yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+8. Digite o cnpj e clique em `Procurar`
 
-### `yarn build`
+9 - O resultado será exibido em formato `JSON` logo abaixo do formulário
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
